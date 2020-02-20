@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: linen;
+  color: lightblue;
+  line-height: 1.6;
+  font-size: 1.8rem;
+  /*
+  overflow: hidden; */
+}
+
+/*CSS Smooth Scroll */
+/*
+.container {
+  width: 100%;
+  height: 100%;
+
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory; 
+}*/
+
+.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  margin: 10px 0 auto;
+  position: sticky;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0);
+}
+
+.logo {
+  width: 350px;
+}
+
+.nav {
+  border-bottom: 1px solid #eaeaeb;
+  display: block;
+  height: 70px;
+  line-height: 70px;
+}
+.menu {
+  margin: 0 10px;
+}
+.menu a {
+  clear: right;
+  text-decoration: none;
+  color: lightsalmon;
+  margin: 0 10px;
+  line-height: 70px;
+}
+
+.menu a:hover {
+  color: lightblue;
+}
+
+label {
+  font-size: 26px;
+  line-height: 70px;
+  width: 70px;
+  display: none;
+}
+
+#toggle {
+  display: none;
+}
+
+.videowrapper {
+  position: relative;
+  height: 56vh;
+  width: 100vh;
+}
+
+.videowrapper iframe {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+section {
+  font-family: "Gaegu", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  scroll-snap-align: center;
+}
+
+section h1 {
+  font-size: 4rem;
+}
+
+section h1 p {
+  font-size: 1.5rem;
+}
+
+.aboutmepage {
+  display: flex;
+  text-align: left;
+  font-size: 2rem;
+  color: black;
+}
+
+.content {
+  padding: 5% 0 0 5%;
+}
+
+.content h1 {
+  color: lightblue;
+  text-align: center;
+}
+.content p {
+  color: black;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.container {
+  padding-bottom: 0rem;
+}
+
+.space {
+  padding: 2.8rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 5.5rem;
+  width: 100%;
+  text-align: center;
+  font-family: "Gaegu", cursive;
+  color: lightblue;
+  font-size: 1.8rem;
+}
+
+@media screen and (max-width: 830px) {
+  .navigation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 32px auto;
+    background: rgba(0, 0, 0, 0);
+  }
+
+  label {
+    margin: 0 0 0 45%;
+    display: block;
+    cursor: pointer;
+  }
+  .nav {
+    margin: 0 auto;
+  }
+  .menu {
+    background-color: rgba(246, 164, 157, 0.7);
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .menu a {
+    display: block;
+    color: linen;
+    border-bottom: 1px solid #eaeaeb;
+    margin: 0 auto;
+  }
+  #toggle:checked + .menu {
+    display: block;
+  }
+}
