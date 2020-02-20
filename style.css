@@ -143,6 +143,47 @@ section h1 p {
   padding: 2.8rem;
 }
 
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px 15%;
+}
+
+.column img {
+  padding: 10px;
+}
+
+.column img:hover {
+  opacity: 0.6;
+}
+
+/*
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.column img {
+  margin-top: 12px;
+}
+
+.row {
+  align-items: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+*/
+
 footer {
   position: absolute;
   bottom: 0;
