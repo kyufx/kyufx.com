@@ -139,6 +139,13 @@ section h1 p {
   padding-bottom: 0rem;
 }
 
+.container h1 {
+  font-family: "Gaegu", cursive;
+  color: lightblue;
+  text-align: center;
+  font-size: 5rem;
+}
+
 .space {
   padding: 2.8rem;
 }
@@ -150,7 +157,7 @@ section h1 p {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin: 30px 15%;
+  margin: 20px 15%;
 }
 
 .column img {
@@ -159,30 +166,8 @@ section h1 p {
 
 .column img:hover {
   opacity: 0.6;
+  transition: all 400ms ease-in-out;
 }
-
-/*
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-}
-
-.column img {
-  margin-top: 12px;
-}
-
-.row {
-  align-items: center;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-*/
 
 footer {
   position: absolute;
