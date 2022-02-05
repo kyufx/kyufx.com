@@ -1,0 +1,29 @@
+@import "main";
+@import "variables";
+
+.demo-reel {
+  margin: 0 5%;
+}
+
+.videowrapper {
+  position: relative;
+  padding-top: 3%;
+  //padding-bottom: 56.25%; // 9/16=56.25% aspect ratio
+  padding-bottom: 42%;
+  @include breakpoint-down(small) {
+    padding-bottom: 70%;
+  }
+  @include breakpoint-down(medium) {
+    //adjusting
+    padding-bottom: 56.25%;
+  }
+}
+
+.video {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  @include breakpoint-down(small) {
+    height: 90%;
+  }
+}

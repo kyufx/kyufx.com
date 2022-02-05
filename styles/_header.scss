@@ -1,0 +1,112 @@
+@import "variables";
+
+.header {
+  //position: relative;
+  z-index: 1;
+
+  &__logo img {
+    width: 75vw;
+    max-width: 22rem;
+  }
+  &.open {
+    .header__hamburger {
+      > span:nth-child(1) {
+        width: 0%;
+        top: 3.75rem;
+        right: 9%;
+      }
+      > span:nth-child(2) {
+        transform: rotate(45deg);
+      }
+      > span:nth-child(3) {
+        transform: rotate(-45deg);
+      }
+      > span:nth-child(4) {
+        width: 0%;
+        top: 3.75rem; //60px
+        right: 9%;
+      }
+    }
+  }
+
+  .overlay {
+    opacity: 0;
+    position: absolute;
+    //top: 8rem;
+    top: 0rem;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: linear-gradient($lightsalmon, $backgroundcolour);
+  }
+
+  nav {
+    //padding: 10px 40px 6px 20px;
+    position: relative;
+    padding-top: 0.8rem;
+    //padding-bottom: 0.8rem;
+  }
+
+  &__hamburger {
+    > span {
+      display: block; //hamburger
+      position: absolute;
+      right: 6%;
+      width: 30px;
+      height: 4px;
+      background-color: $lightblue;
+      transition: all 200ms ease-in-out;
+      transform-origin: center;
+      &:nth-child(1) {
+        //top: 3.125rem; //50px top line
+        top: 3.125rem; //3.125rem 50px top line
+      }
+      &:nth-child(2) {
+        top: 3.75rem; //3.75rem 0px middle line
+      }
+      &:nth-child(3) {
+        top: 3.75rem; //3.75rem 60px hidden
+      }
+      &:nth-child(4) {
+        top: 4.375rem; //4.375rem 70px bottom line
+      }
+    }
+  }
+  &__menu {
+    position: absolute;
+
+    width: calc(100% - 3rem);
+    left: 50%;
+    transform: translateX(-50%);
+    //padding: 1.625rem;
+
+    a {
+      display: block;
+      text-align: center;
+      padding: 0.625rem;
+      font-family: $textfont;
+      //color: $lightblue;
+      color: $lightersalmon;
+
+      &:hover {
+        color: $lightblue;
+      }
+    }
+  }
+
+  &__links {
+    a {
+      position: relative;
+      font-family: $textfont;
+      color: $lightsalmon;
+      transition: color 200ms ease-in-out; //color fade animation on over
+
+      &:not(:last-child) {
+        margin-right: 1.25rem; //adding margin, except last
+      }
+      &:hover {
+        color: $lightblue; //color change on hover
+      }
+    }
+  }
+}

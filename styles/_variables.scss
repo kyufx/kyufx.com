@@ -1,0 +1,110 @@
+//typography
+@import url("https://fonts.googleapis.com/css2?family=Gaegu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+$titlefont: "Gaegu", cursive;
+$textfont: "Roboto", sans-serif;
+
+//colours
+$backgroundcolour: #faf0e6;
+$lightblue: #bce2dd;
+$lightsalmon: #f6a49d;
+$lightersalmon: rgb(255, 241, 239);
+$black: black;
+
+//flexbox styles
+.flex {
+  display: flex;
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
+
+//mixins
+
+// mediascreeen-desktop-break-points
+@media (min-width: 64em) {
+}
+$breakpoint-up: (
+  "medium": "40em",
+  //640px
+  "large": "64em",
+  //1024px
+  "xlarge": "87.5em",
+  //1400px
+);
+
+$breakpoint-down: (
+  "small": "39.9375em",
+  //369px
+  "medium": "63.9375em",
+  //1023px
+  "large": "87.4375em",
+  //1399px
+);
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($breakpoint-up, $size)) {
+    @content;
+  }
+}
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoint-down, $size)) {
+    @content;
+  }
+}
+
+//animations
+
+.unfade {
+  visibility: visible;
+}
+
+.fade {
+  visibility: hidden;
+}
+
+@keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fade-in 200ms ease-in-out forwards;
+}
+
+@keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  animation: fade-out 200ms ease-in-out forwards;
+}

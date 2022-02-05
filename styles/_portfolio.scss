@@ -1,0 +1,94 @@
+.grid-container {
+  justify-content: center;
+  margin-top: 2rem;
+  margin-left: 6vw;
+  margin-right: 6vw;
+  margin-bottom: 2rem;
+}
+
+.portfolio {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  min-height: 80vh;
+
+  &__item {
+    *:hover {
+      transform: scale(1.01);
+      opacity: 0.9;
+    }
+  }
+
+  &__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__overlay {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba($color: #000000, $alpha: 0.3);
+    transition: opacity 300ms ease-in-out;
+    font-family: $textfont;
+    a {
+      padding: 120px;
+    }
+    h1 {
+      color: rgb(177, 177, 177);
+    }
+  }
+}
+
+.kittybot {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  * {
+    grid-row: 1/1;
+    grid-column: 1/1;
+  }
+}
+
+.bossbot {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  * {
+    grid-row: 1/1;
+    grid-column: 1/1;
+  }
+}
+
+.henchbot {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  * {
+    grid-row: 1/1;
+    grid-column: 1/1;
+  }
+}
+
+.trolly {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  * {
+    grid-row: 1/1;
+    grid-column: 1/1;
+  }
+}
+
+.fruit {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  * {
+    grid-row: 1/1;
+    grid-column: 1/1;
+  }
+}

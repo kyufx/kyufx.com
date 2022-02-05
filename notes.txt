@@ -1,0 +1,48 @@
+<iframe
+  title="vimeo-player"
+  src="https://player.vimeo.com/video/388730596?h=2be5d5f27b"
+  width="640"
+  height="360"
+  frameborder="0"
+  allowfullscreen
+></iframe>
+
+//no scroll aspect from script.js //body.classList.remove('noscroll');
+//body.classList.add('noscroll'); //from footer
+<h1>Contact Me!</h1>
+<a href="mailto:kyueffects@gmail.com"
+  ><img width="30" src="/img/icons/email-blue_46940.png"
+/></a>
+
+-references- https://www.youtube.com/watch?v=4SQXOA8Z-lo&t=681s hosting with
+cloudflare https://www.youtube.com/watch?v=MTc2CTYoszY video { width: 100%;
+aspect-ratio: 16/9; } 
+
+boss-bot
+https://player.vimeo.com/video/372720693?h=01641102b4 
+
+hench-bot
+https://player.vimeo.com/video/372728680?h=d0e8419cb9 
+
+trolly
+https://player.vimeo.com/video/372663820?h=d18144f99f
+
+fruit
+https://player.vimeo.com/video/373200875?h=bd5d2563de 
+
+materials
+https://player.vimeo.com/video/372712029?h=0026521924
+
+
+
+from _portfolio
+
+//max-width: 80vw; //to stop scaling to larger screens
+    //margin: 0 1rem; //to keep center
+    //&__item {
+    //overflow: hidden;
+    //&:focus {
+    //position: relative;
+    //z-index: 2;}
+
+    //transition: transform 750 cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
