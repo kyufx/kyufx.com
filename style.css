@@ -108,6 +108,7 @@ section h1 p {
 
 .aboutmepage {
   display: flex;
+  padding: 0 10% 0 10%;
   text-align: left;
   font-size: 2rem;
   color: black;
